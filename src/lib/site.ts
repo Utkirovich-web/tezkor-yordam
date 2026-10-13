@@ -1,6 +1,10 @@
 // Domen tayyor bo‘lgach shu yerda almashtiring (yoki NEXT_PUBLIC_SITE_URL orqali bering).
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://tezkoryordam.uz";
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  "https://utkirovich-web.github.io/tezkor-yordam";
+
+// GitHub Pages’da "/tezkor-yordam", lokalda "" (next.config.ts bilan bir xil)
+export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export const SITE_NAME = "Tezkor Yordam";
 
