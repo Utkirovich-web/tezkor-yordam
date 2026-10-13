@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-jakarta);
+  --font-mono: var(--font-jetbrains);
+
+  --color-ink: #0f172a;
+  --color-brand: #047857;
+  --color-brand-dark: #065f46;
+  --color-sos: #dc2626;
+  --color-level-red: #dc2626;
+  --color-level-yellow: #eab308;
+  --color-level-green: #15803d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: var(--color-ink);
+}
+
+/* Bo‘lim sarlavhasi tepasidagi kichik mono yozuv */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+details[open] .faq-arrow {
+  transform: rotate(90deg);
+}
